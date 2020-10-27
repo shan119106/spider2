@@ -10,12 +10,16 @@
 	<h3>Instruction:</h3>
 	<p>You can answer only once</p>
 	<p>Total number of questions: <span class="total_questions"></span></span></p>
+	<label>Username:</label><br>
+	<input type="text"  class ="username" required><br>
+	<button type="submit" class="btn" onclick="startQuiz()">Start Quiz</button>
 
-	<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
 </div>
 	<div class="quiz-box custom_page hide">
+		<div class="header">
 		<div class="question-number">
-		</div>
+		</div><div><p>Timer:</p></div><div id="timer" class="timer"></div>
+	</div>
 		<div class="question-text">
 			
 		</div>
@@ -39,8 +43,18 @@
 	<h1>Quiz Result</h1>
 	<table>
 		<tr>
+			<td>Username</td>
+			<td><span class="user-name"></span></td>
+			
+		</tr>
+		<tr>
 			<td>Total Question</td>
 			<td><span class="total-question"></span></td>
+			
+		</tr>
+		<tr>
+			<td>Time Taken</td>
+			<td><span class="time-taken"></span></td>
 			
 		</tr>
 		<tr>
@@ -57,17 +71,38 @@
 		</tr>
 		<tr>
 			<td>Wrong/Right</td>
-			<td><span class="ratio">4</span></td>
+			<td><span class="ratio"></span></td>
 		</tr>
 		<tr>
 			<td>Your Total score</td>
 			<td><span class="total-score"></span></td>
 		</tr>
+		<tr>
+			<td><h2>High Score</h2></td>
+			
+		</tr>
+		<tr>
+			<td>Score</td>
+			<td><span class="high-score"></span></td>
+		</tr>
+		<tr>
+			<td>User</td>
+			<td><span class="High-score-user"></span></td>
+		</tr>
+		<tr>
+			<td>Date</td>
+			<td><span class="HighScore-Date"></span></td>
+		</tr>
+		<tr>
+			<td>Time</td>
+			<td><span class="HighScore-Time"></span></td>
+		</tr>
 	</table>
 	
 	<button type="button" class="btn" style="display: none">Go Home</button>
 </div>
-<script src="question.js"></script>
 <script src="script.js"></script>
+<script src="question.js"></script>
+
 </body>
 </html>
